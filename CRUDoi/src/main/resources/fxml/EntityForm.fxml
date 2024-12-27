@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="340.0" prefWidth="300" spacing="10" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourpackage.controller.EntityFormController">
+   <Pane prefHeight="450.0" prefWidth="300.0">
+      <children>
+          <Label layoutX="121.0" layoutY="94.0" text="Описание:" textFill="WHITE" />
+          <Button layoutX="122.0" layoutY="301.0" onAction="#onCancel" text="Отмена" />
+          <Button layoutX="114.0" layoutY="263.0" onAction="#onSave" text="Сохранить" />
+          <TextArea fx:id="descriptionField" layoutX="8.0" layoutY="117.0" prefHeight="106.0" prefRowCount="5" prefWidth="285.0" />
+          <TextField fx:id="nameField" layoutX="75.0" layoutY="51.0" />
+          <Label layoutX="121.0" layoutY="22.0" text="Название:" textFill="WHITE" />
+      </children>
+   </Pane>
+</VBox>

@@ -1,0 +1,7 @@
+com\yourpackage\model\Entity.class
+com\yourpackage\dao\EntityDAOImpl.class
+com\yourpackage\controller\EntityFormController.class
+com\yourpackage\controller\MainController$1.class
+com\yourpackage\controller\MainController.class
+com\yourpackage\dao\EntityDAO.class
+com\yourpackage\Main.class

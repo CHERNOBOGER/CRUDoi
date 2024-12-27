@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="371.0" prefWidth="1020.0" spacing="15" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourpackage.controller.MainController">
+    <Pane prefHeight="39.0" prefWidth="1021.0">
+        <TextField fx:id="searchField" layoutX="14.0" layoutY="7.0" prefHeight="0.0" prefWidth="100.0" promptText="Поиск" />
+        <Button layoutX="953.0" layoutY="7.0" onAction="#onRefresh" text="Refresh" textAlignment="CENTER" />
+    </Pane>
+
+    <TableView fx:id="entityTable" editable="true" prefHeight="200" prefWidth="400">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="58.0" sortable="false" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="185.0" sortable="false" text="Name" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="285.0" text="Description" />
+            <TableColumn fx:id="createdAtColumn" prefWidth="238.0" text="CreatedAt" />
+            <TableColumn fx:id="updatedAtColumn" minWidth="0.0" prefWidth="254.0" text="UpdatedAt" />
+        </columns>
+    </TableView>
+    <Pane prefHeight="84.0" prefWidth="1009.0">
+        <children>
+            <Button onAction="#onCreate" prefHeight="93.0" prefWidth="340.0" text="Create" />
+            <Button layoutX="340.0" onAction="#onUpdate" prefHeight="93.0" prefWidth="340.0" text="Update" />
+            <Button layoutX="680.0" onAction="#onDelete" prefHeight="93.0" prefWidth="340.0" text="Delete" />
+        </children>
+    </Pane>
+</VBox>
